@@ -51,16 +51,15 @@
 
 
 ### 모델 학습 
+ - 모델에 대한 과적합(Overfit), 데이터 편중을 막고자 K-Fold Cross Validation을 이용하였다.  
+ ![K-CROSS](https://user-images.githubusercontent.com/73388615/102813728-b01e3c80-440c-11eb-911e-baa6682d0370.JPG)
+
 1. Naive Bayes 모델 학습 
-    - alpha(라플라스 스무딩), 사전확률 포함 여부를 변경해가면서 정확도 측정하였다.
-    - 모델에 대한 과적합(Overfit), 데이터 편중을 막고자 K-Fold Cross Validation을 이용하였다.              
-    ![K-CROSS](https://user-images.githubusercontent.com/73388615/102813728-b01e3c80-440c-11eb-911e-baa6682d0370.JPG)
+    - alpha(라플라스 스무딩), 사전확률 포함 여부를 변경해가면서 정확도 측정하였다.            
     - Confusion Matrix를 활용하여 True Positive(TP), True Negative(TN), False Positive(FP), False Negative(FN)의 빈도를 알아보았다. 
   
 2. SVM 모델 학습
-
     - Kernel(4가지) Linear,Poly,Sigmoid,Rbf로 측정하여서 어떤 분류선이 분류하는데 있어 가장 좋은지 알아보았다. 
-    - 모델에 대한 과적합(Overfit), 데이터 편중을 막고자 K-Fold Cross Validation을 이용하였다. 
     - Confusion Matrix를 활용하여 True Positive(TP), True Negative(TN), False Positive(FP), False Negative(FN)의 빈도를 알아보았다. 
 3. MLP 모델 학습
 
